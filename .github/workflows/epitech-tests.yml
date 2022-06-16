@@ -1,0 +1,12 @@
+name: Tests contribution project CI
+
+on:
+    pull_request:
+        branches: ["master"]
+
+jobs:
+    build:
+        runs_on: unbuntu-latest
+
+        steps:
+	- uses: actions/checkout@v3
